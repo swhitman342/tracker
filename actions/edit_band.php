@@ -1,6 +1,7 @@
 <!-- <pre><?php print_r($_POST) ?></pre>
 <pre><?php print_r($_GET) ?></pre> -->
 <?php 
+session_start();
 //read file into array
 $lines = file('../data/bands.csv', FILE_IGNORE_NEW_LINES);
 
@@ -14,6 +15,11 @@ $data_string = implode("\n",$lines);
 $f = fopen('../data/bands.csv','w');
 fwrite($f,$data_string);
 fclose($f);
+
+$_SESSION['message'] = array(
+		'text' => 'Your band has been edited.',
+		'type' => 'block'
+);
 
 header('location:../?p=list_bands');
 ?>

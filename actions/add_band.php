@@ -19,6 +19,8 @@ if(  $_POST['band_name'] != ''
 	//redirect to form
 	header('Location:../?p=add_band'); 	
 	$_SESSION['message'] = 'Please enter all required information';
+	
+	
 }
 
 
