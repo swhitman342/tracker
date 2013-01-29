@@ -1,0 +1,37 @@
+nav ul li a {
+	text-decoration:none;
+	color:black;
+	float:left;
+	display:block;
+	padding:0px 10px;
+}
+
+nav ul{
+	list-style:none;
+	padding:10px;
+}
+
+footer {
+	
+}
+
+form-horizontal {
+	float:left;
+	background-color:green;
+}
+
+div #wrapper {
+	background-color:red;	
+}
+
+h2 {
+	color:rgb(120,60,180);
+}
+
+.form-actions button i {
+	color:
+}
+
+tbody a {
+	href:"views/add_band.php";
+}
