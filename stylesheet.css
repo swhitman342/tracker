@@ -15,17 +15,14 @@ footer {
 	
 }
 
-form-horizontal {
-	float:left;
-	background-color:green;
-}
-
 div #wrapper {
 	background-color:red;	
 }
 
 h2 {
 	color:rgb(120,60,180);
+	box-shadow: 0px 40px 35px rgba(171,0,0,.1);
+
 }
 
 .form-actions button i {
@@ -34,4 +31,22 @@ h2 {
 
 tbody a {
 	href:"views/add_band.php";
+}
+
+#header .header{
+	font-size:40px;
+}
+
+main {
+	background-color:red;
+}
+
+.nav ul li a.hover {
+	background-color:#AB0707;
+
+}
+
+a.brand {
+	padding:80px;
+	color:red;
 }

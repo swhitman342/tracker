@@ -6,22 +6,22 @@ session_start();
 $lines = file('../data/bands.csv', FILE_IGNORE_NEW_LINES);
 
 // replace line with new values
-$lines[$_POST['linenum']] = "{$_POST['band_name']},{$_POST['band_genre']},{$_POST['band_albums']}";
+$lines[$_POST['linenum']] = "{$_POST['movie_name']},{$_POST['movie_genre']},{$_POST['actors']}";
 
 // create the string to werite to the file
 $data_string = implode("\n",$lines);
 
 // write the string to the file, overwriting current contents
-$f = fopen('../data/bands.csv','w');
+$f = fopen('../data/movies.csv','w');
 fwrite($f,$data_string);
 fclose($f);
 
 $_SESSION['message'] = array(
-		'text' => 'Your band has been edited.',
+		'text' => 'Changes have been made.',
 		'type' => 'block'
 );
 
-header('location:../?p=list_bands');
+header('location:../?p=list_movies');
 ?>
 
 <pre><?php print_r($_POST) ?></pre>
