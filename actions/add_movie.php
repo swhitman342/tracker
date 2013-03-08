@@ -1,5 +1,6 @@
 <!-- <?php session_start()?> 
  <pre><?php print_r($_POST);?></pre> -->
+
 <?php
 //validate that each piece of info was provided
 if(  $_POST['movie_name'] != ''

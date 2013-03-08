@@ -9,7 +9,7 @@ require('functions.php');
 <html>
 	<head>
 		<!-- Bootstrap CSS-->
-		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css"/>
 		<!-- Mybands CSS -->
 		<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 		<title>MyBands</title>
